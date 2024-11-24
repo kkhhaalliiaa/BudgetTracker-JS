@@ -1,0 +1,212 @@
+//Variables for colors used throughout the project
+$primary-color: #8412ee; //my primary color for headings and buttons
+$secondary-color:#ddac17b9;
+$text-color:#333;
+$font:'Courier New', Courier, monospace;
+$light-bg-color:#f9f9f9;
+$dark-text-color:#000;
+$white:whitesmoke;
+
+// Mixin for linear gradient background
+@mixin gradient($start-color, $end-color) {
+    background: linear-gradient(to right, $start-color, $end-color);
+}
+
+//reseting defult styles of the html
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//my body and main styles
+body{
+    font-family:$font;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+// using the gradient mixin here with my colors
+@include gradient(#8412ee, #ddac17b9); 
+}
+
+//targeting the title
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: $dark-text-color;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.483);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+//targeting everything in the main content
+main{
+    width: 100%;
+    max-width: 1000px;
+    background-color: $white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+//header section : Divs, h5, and span tags
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background-color: $secondary-color;
+    color: $white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    div{
+        padding:5px;
+    }
+
+    h5{
+        font-size: 14px;
+        margin: 8px;
+    }
+
+    span{
+        font: 21px;
+        font-weight: bold;
+    }
+}
+
+//table section : table, th, td, and tr
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+
+    th,td{
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #8412ee55;
+    }
+
+    th{
+        background-color: $secondary-color;
+        color: $light-bg-color;
+        font-weight:bold;
+    }
+
+    td{
+        background-color: $light-bg-color;
+    }
+
+    tr{
+        background-color: #e8e8e8;
+    }
+}
+
+//styles for the delte button 
+.delete-btn{
+    font-family: $font;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+
+    &:hover{
+        background-color: $secondary-color;
+    }
+}
+
+//form styles
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        padding:0 60px; 
+        font-size: 14px;
+        text-align: center;
+    }
+
+    input,button{
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+
+    input{
+        font-family: $font;
+        background-color: $primary-color;
+        color: $light-bg-color;
+        width: 150px;
+
+        &::placeholder{
+            color:$white;
+        }
+    }
+
+    button{
+        font-family: $font;
+        background-color: $primary-color;
+        color: $white;
+        cursor: pointer;
+        margin-top: 15px;
+        transition:background-color 0.3s ease;
+
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+}
+
+//status message for the javascript
+#status-message{
+    text-align: center;
+    color: $primary-color;
+    margin-top: 10px;
+}
+
+//responsive styles
+@media(max-width: 768px){
+    header {
+        grid-template-columns: 1fr; 
+    }
+    table th, table td {
+        padding: 10px;
+    }
+    form {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    form button {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px){
+    main {
+        padding: 15px; 
+    }
+
+    header {
+        grid-template-columns: 1fr; 
+    }
+
+    table th, table td {
+        padding: 8px; 
+    }
+}
