@@ -1,8 +1,35 @@
-## Budget Tracker:
+## Budget Tracker
+# Overview
+The Budget Tracker is a simple and responsive web application built with HTML, CSS (SASS), and JavaScript to help users effectively manage their finances. The app allows you to record, review, and delete transactions while providing a real-time overview of your total budget, income, and expenses. Its clean and intuitive interface ensures ease of use, whether you're on a desktop or mobile device.
 
-# Overview :
-This Budget Tracker is a simple web app that I built using HTML, CSS (SASS), and JavaScript that allows users to track their income and expenses. It features an intuitive user friendly interface where you can easily add income or expense transactions, specifying the description, amount, and date. The app calculates and displays the total budget, income, and expenses, updating in real-time as transactions are added. It also provides a list of all recorded transactions, with an option to delete them. The app is fully responsive, ensuring a smooth experience on both desktop and mobile devices. The application is built using object-oriented programming principles with a budget class that manages the transactions and performs the necessary calculations. Whether you're managing personal finances or just tracking daily expenses, the Budget Tracker provides a clean and functional way to keep an eye on your financial status.
+# Features
+- Add Transactions: Record income or expenses by entering the description, amount, and date.
+- Real-Time Calculations: Automatically update the total budget, income, and expenses as you add transactions.
+- Transaction List: View all recorded transactions in a clear list format.
+- Delete Transactions: Remove specific entries from the list with a single click.
+- Responsive Design: For both desktop and mobile devices.
 
-# Instructions :
-To get started, simply enter the transaction details and submit the form. Your budget summary will automatically update with the latest total. If you need to remove a transaction, just click the "Delete" button next to it. Some future changes for my tracker  could include saving transactions to local storage, adding more detailed validation, and implementing features like a graph.
+# How to Use
+- Open the app in your browser by visiting: Budget Tracker.
+
+# Use the form to input transaction details:
+- Description: A brief note about the transaction.
+- Amount: Enter positive values for income and negative values for expenses.
+- Date: Specify the transaction date.
+- Click the Add button to save the transaction.
+- Monitor the updated budget summary (total budget, income, and expenses) displayed in real-time.
+- To remove a transaction, click the Delete button next to it in the transaction list.
+
+# Technologies Used
+- HTML: Structure and layout of the app.
+- CSS (SASS): Styling, including responsive design.
+- JavaScript: Core functionality and real-time budget updates.
+
+# Planned Enhancements
+- Local Storage: Save transactions locally for persistence across sessions.
+- Validation Improvements: Add more robust input validation for accuracy.
+- Graphical Representation: Include graphs to visualize spending and income trends.
+
+# Live Demo
+Experience the Budget Tracker here: https://kkhhaalliiaa.github.io/BudgetTracker-JS/
 
