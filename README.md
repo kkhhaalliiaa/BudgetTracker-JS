@@ -2,15 +2,15 @@
 ## Overview
 The Budget Tracker is a simple and responsive web application built with HTML, CSS (SASS), and JavaScript to help users effectively manage their finances. The app allows you to record, review, and delete transactions while providing a real-time overview of your total budget, income, and expenses. Its clean and intuitive interface ensures ease of use, whether you're on a desktop or mobile device.
 
+## Live Demo
+- Experience the Budget Tracker here: https://kkhhaalliiaa.github.io/BudgetTracker-JS/
+
 ## Features
 - Add Transactions: Record income or expenses by entering the description, amount, and date.
 - Real-Time Calculations: Automatically update the total budget, income, and expenses as you add transactions.
 - Transaction List: View all recorded transactions in a clear list format.
 - Delete Transactions: Remove specific entries from the list with a single click.
 - Responsive Design: For both desktop and mobile devices.
-
-## How to Use
-- Open the app in your browser by visiting: Budget Tracker.
 
 ## Use the form to input transaction details:
 - Description: A brief note about the transaction.
@@ -30,6 +30,4 @@ The Budget Tracker is a simple and responsive web application built with HTML, C
 - Validation Improvements: Add more robust input validation for accuracy.
 - Graphical Representation: Include graphs to visualize spending and income trends.
 
-## Live Demo
-- Experience the Budget Tracker here: https://kkhhaalliiaa.github.io/BudgetTracker-JS/
 
